@@ -1,6 +1,6 @@
 require('dotenv').config()
 const faunadb = require('faunadb')
-const pageTemplate = require('./temlpate.js')
+const pageTemplate = require('./template.js')
 
 const q = faunadb.query
 const client = new faunadb.Client({
@@ -8,7 +8,7 @@ const client = new faunadb.Client({
 })
 
 module.exports.handler = async event => {
-    const path = event.queryStringParameters.id.replce('/', '')
+    const path = event.queryStringParameters.id.replace('/', '')
     try {
         const queryResponse = await client.query(
             q.Get(q.Match(q.Index('page_by_path'), path))
