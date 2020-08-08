@@ -14,6 +14,7 @@ module.exports = data => `
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <link href="/css/freelancer.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
 
   <body id="page-top">
