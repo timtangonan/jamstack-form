@@ -4,7 +4,7 @@ const shortid = require('shortid')
 const axios = require('axios')
 const querystring = require('querystring')
 
-const q = faundadb.query
+const q = faunadb.query
 const client = new faunadb.Client({
     secret: process.env.FAUNADB
 })
