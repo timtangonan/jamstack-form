@@ -11,7 +11,7 @@ module.exports.handler = async event => {
     const path = event.queryStringParameters.id.replce('/', '')
     try {
         const queryResponse = await client.query(
-            q.Get(q.Match(q.Index('page_by_path')))
+            q.Get(q.Match(q.Index('page_by_path'), path))
         )
 
         const response = {
