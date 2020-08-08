@@ -1,6 +1,6 @@
 require('dotenv').config()
 const faunadb = require('faunadb')
-const pageTemplate = require('./temlpate.js')
+const pageTemplate = require('./template.js')
 
 const q = faunadb.query
 const client = new faunadb.Client({
