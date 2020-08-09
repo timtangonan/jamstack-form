@@ -1,21 +1,20 @@
 [build]
-    command = "eleventy"
-    publish = "_site"
-    functions = "functions"
+  command = "eleventy"
+  publish = "_site"
+  functions = "functions"
 
 [[redirects]]
-    # refer to form attributes
-    from = "/new"
-    to = "/.netlify/functions/new"
-    status = 200
+  from = "/new"
+  to = "/.netlify/functions/new"
+  status = 200
 
 [[redirects]]
-    from = "/mypage/*"
-    to = "/.netlify/functions/display?id=:splat"
-    status = 302
+  from = "/mypage/*"
+  to = "/.netlify/functions/display?id=:splat"
+  status = 302
 
 [[redirects]]
-    from = "/*"
-    to = "/notfound.html"
-    force = false
-    status = 404
+  from = "/*"
+  to = "/notfound.html"
+  force = false
+  status = 404
