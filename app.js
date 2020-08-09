@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   submitButton.disabled = true;
 
   const myWidget = cloudinary.createUploadWidget({
-    cloudName: 'tamas-demo',
-    uploadPreset: 'eh6botl8',
+    cloudName: 'timtangonan',
+    uploadPreset: 'nmrvabsu',
     sources: ['local'],
     multiple: false,
     theme: 'minimal',
